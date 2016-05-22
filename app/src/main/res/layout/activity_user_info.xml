@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/all_info"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#84dadada"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.jiang.deliciousfood.UserInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/infotoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <WebView
+        android:id="@+id/info_web"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </WebView>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" >-->
+
+        <!--<com.jiang.deliciousfood.custom.WhewView-->
+            <!--android:id="@+id/wv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp" />-->
+
+        <!--<com.jiang.deliciousfood.custom.RoundImageView-->
+            <!--android:id="@+id/my_photo"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@mipmap/ic_my"-->
+            <!--imagecontrol:border_inside_color="#bc0978"-->
+            <!--imagecontrol:border_outside_color="#ba3456"-->
+            <!--imagecontrol:border_thickness="1dp"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_listview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="头像"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:paddingTop="10dp"
+                android:id="@+id/info_common_img_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_chevron_right_grey600_36dp"/>
+
+            <ImageView
+                android:id="@+id/user_info_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toStartOf ="@id/info_common_img_one"
+                android:layout_alignTop="@id/info_common_img_one"/>
+        </RelativeLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#b6b7b7"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/info_common_img_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_chevron_right_grey600_36dp"/>
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:id="@+id/user_info_nickname"
+                android:text="游客⑨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf ="@id/info_common_img_two"
+                />
+        </RelativeLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#b6b7b7"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MID(不可修改)"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/info_common_img_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_chevron_right_grey600_36dp"/>
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:id="@+id/user_info_mid"
+                android:text="游客⑨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf ="@id/info_common_img_three"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/info_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_listview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/info_common_img_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_chevron_right_grey600_36dp"/>
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:id="@+id/user_info_phone"
+                android:text="游客⑨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf ="@id/info_common_img_four"
+                />
+        </RelativeLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#b6b7b7"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/info_common_img_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_chevron_right_grey600_36dp"/>
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:id="@+id/user_info_email"
+                android:text="游客⑨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf ="@id/info_common_img_five"
+                />
+        </RelativeLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#b6b7b7"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机验证状态"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/info_common_img_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_chevron_right_grey600_36dp"/>
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:id="@+id/user_info_phone_state"
+                android:text="游客⑨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf ="@id/info_common_img_six"
+                />
+        </RelativeLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#b6b7b7"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱验证状态"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/info_common_img_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_chevron_right_grey600_36dp"/>
+
+            <TextView
+                android:paddingTop="@dimen/info_ac"
+                android:id="@+id/user_info_email_state"
+                android:text="游客⑨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf ="@id/info_common_img_seven"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="修改密码"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="退出登录"/>
+
+
+</LinearLayout>

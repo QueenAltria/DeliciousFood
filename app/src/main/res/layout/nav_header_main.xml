@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/nav_header_height"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@drawable/bg_02"
+              android:gravity="bottom"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.meg7.widget.CustomShapeImageView
+            android:id="@+id/customimageview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/register_head"
+            app:shape="circle"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/customimageview"
+            android:layout_alignBottom="@id/customimageview"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+        <ImageView
+            android:id="@+id/head_image_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/user_name"
+            android:layout_alignBottom="@id/user_name"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

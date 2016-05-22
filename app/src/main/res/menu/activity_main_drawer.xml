@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_replay_grey600_36dp"
+            android:title="随便看看"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/ic_format_list_bulleted_grey600_36dp"
+            android:title="分类"/>
+        <item
+            android:id="@+id/nav_shoucang"
+            android:icon="@mipmap/ic_keyboard_alt_grey600_36dp"
+            android:title="收藏"/>
+
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_waimai"
+                android:icon="@mipmap/ic_local_restaurant_grey600_36dp"
+                android:title="美团"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/ic_extension_grey600_36dp"
+                android:title="设置"/>
+        </menu>
+    </item>
+
+</menu>

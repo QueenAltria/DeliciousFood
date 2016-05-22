@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/frag_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/small"
+    android:paddingLeft="@dimen/small"
+    android:paddingRight="@dimen/small"
+    android:paddingTop="@dimen/small"
+    android:background="#84dadada"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/jiazaizhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:indicator="BallClipRotate"
+        android:layout_gravity="center"
+        app:indicator_color="#dd3352"/>
+    <TextView
+        android:id="@+id/demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/activity_vertical_margin"/>
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/menu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00ffffff"
+            android:dividerHeight="5dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:overScrollMode="never"/>
+</LinearLayout>

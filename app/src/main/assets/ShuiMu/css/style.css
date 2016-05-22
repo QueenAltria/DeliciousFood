@@ -1,0 +1,172 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background: #fff;
+  overflow: hidden;
+}
+
+.st0 {
+  fill: #334A5E;
+}
+
+.st1 {
+  fill: #FFFFFF;
+}
+
+.st2 {
+  opacity: 0.5;
+}
+
+.st3 {
+  fill: #E1E1E1;
+}
+
+.st4 {
+  fill: #F3F3F3;
+}
+
+.st5 {
+  fill: #EFEEEF;
+}
+
+.st6 {
+  opacity: 0.4;
+  fill: #F8F7F6;
+}
+
+.st7 {
+  opacity: 0.1;
+  fill: #FFFFFF;
+}
+
+.st8 {
+  fill: #73A4CD;
+}
+
+.st9 {
+  fill: #4A6B80;
+}
+
+.st10 {
+  opacity: 0.3;
+  fill: #FFFFFF;
+}
+
+.st11 {
+  fill: #46B7A6;
+}
+
+.oeil {
+  animation: wink 4s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes wink {
+  0%,
+  86%,
+  100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0);
+  }
+}
+
+#tentacules>g {
+  animation: stream 2s ease-in-out alternate infinite;
+  transform-origin: 50% 50%;
+}
+
+#tentacules>g:nth-of-type(n) {
+  animation-delay: -1.33s;
+}
+
+#tentacules>g:nth-of-type(n+1) {
+  animation-delay: -0.88s;
+}
+
+#tentacules>g:nth-of-type(n+2) {
+  animation-delay: -0.44s;
+}
+
+#tentacules>g:nth-of-type(n+3) {
+  animation-delay: -1.55s;
+}
+
+#tentacules>g:nth-of-type(n+4) {
+  animation-delay: -0.22s;
+}
+
+#tentacules>g:nth-of-type(n+5) {
+  animation-delay: -1.11s;
+}
+
+#tentacules>g:nth-of-type(n+6) {
+  animation-delay: -1.77s;
+}
+
+#tentacules>g:nth-of-type(n+7) {
+  animation-delay: -0.66s;
+}
+
+@keyframes stream {
+  50% {
+    transform: skew(7deg);
+  }
+  100% {
+    transform: scaleX(1.3) scaleY(1.2);
+  }
+}
+
+.green {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: green 7s linear forwards;
+  stroke-width: 5;
+}
+
+@keyframes green {
+  0% {
+    stroke-dashoffset: 500;
+    fill: transparent;
+  }
+  60% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #46B7A6;
+  }
+}
+
+.blue {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: blue 7s linear forwards;
+  stroke-width: 5;
+}
+
+@keyframes blue {
+  0% {
+    stroke-dashoffset: 500;
+    fill: transparent;
+  }
+  60% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #334A5E;
+  }
+}

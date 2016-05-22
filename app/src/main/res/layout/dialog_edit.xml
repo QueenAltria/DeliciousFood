@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/dialog_edit_info"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/blank_space">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img11"/>
+    <TextView
+        android:id="@+id/into_warnning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入修改后的信息"
+        android:paddingLeft="10dp"
+        android:background="@mipmap/blank_space"/>
+
+    <EditText
+        android:id="@+id/edit_info_after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:background="@mipmap/blank_space"/>
+</LinearLayout>

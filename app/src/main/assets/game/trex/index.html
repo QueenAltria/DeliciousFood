@@ -1,0 +1,80 @@
+<html >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=no">
+        <title>Trex</title>
+        <style>
+            body {
+              background: #fff;
+            }
+            #offline-resources{
+                display: none;
+            }
+            .runner-container {
+              height: 150px;
+              max-width: 600px;
+              overflow: hidden;
+              position: absolute;
+              top: 10px;
+              width: 44px;
+              z-index: 2;
+            }
+            .controller {
+              background: rgba(247,247,247, .1);
+              height: 100%;
+              width: 100%;
+              height: 100vh;
+              width: 100vw;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              z-index: 1;
+            }
+            .interstitial-wrapper{
+              max-width: 600px;
+              height: 100%;
+              position: relative;
+              margin: 5px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <button style="width:100%;padding:25px 0;border:none;background:none;color:blue;display:none" id="btn-close">关闭</button>
+        <div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
+          <img class="icon icon-offline" jseval="updateIconClass(this.classList, iconClass)" jstcache="1" style="visibility: hidden;">
+        </div>
+        <div id="offline-resources" jstcache="0">
+            <div id="offline-resources-1x" jstcache="0">
+                <img id="1x-obstacle-large" src="image/1x-obstacle-large.png" jstcache="0">
+                <img id="1x-obstacle-small" src="image/1x-obstacle-small.png" jstcache="0">
+                <img id="1x-cloud" src="image/1x-cloud.png" jstcache="0">
+                <img id="1x-text" src="image/1x-text.png" jstcache="0">
+                <img id="1x-horizon" src="image/1x-horizon.png" jstcache="0">
+                <img id="1x-trex" src="image/1x-trex.png" jstcache="0">
+                <img id="1x-restart" src="image/1x-restart.png" jstcache="0">
+            </div>
+            <div id="offline-resources-2x" jstcache="0">
+                <img id="2x-obstacle-large" src="image/2x-obstacle-large.png" jstcache="0">
+                <img id="2x-obstacle-small" src="image/2x-obstacle-small.png" jstcache="0">
+                <img id="2x-cloud" src="image/2x-cloud.png" jstcache="0">
+                <img id="2x-text" src="image/2x-text.png" jstcache="0">
+                <img id="2x-horizon" src="image/2x-horizon.png" jstcache="0">
+                <img id="2x-trex" src="image/2x-trex.png" jstcache="0">
+                <img id="2x-restart" src="image/2x-restart.png" jstcache="0">
+            </div>
+        </div>
+        <template id="audio-resources" jstcache="0">
+          <audio id="offline-sound-press" src=""></audio>
+          <audio id="offline-sound-hit" src=""></audio>
+          <audio id="offline-sound-reached" src=""></audio>
+        </template>
+        <script type="text/javascript">
+          location.search.indexOf("night")>-1 && (document.body.style.background = "#000");
+        </script>
+        <script src="js/runner.js"></script>
+
+    </body>
+</html>
